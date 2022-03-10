@@ -1,6 +1,7 @@
 [submodule "CDCN_Covid19_BE"]
 	path = CDCN_Covid19_BE
-	url = git@github.com:o2buzzle/CDCN_Covid19_BE.git
+	url = https://github.com/o2buzzle/CDCN_Covid19_BE.git
 [submodule "CDCN_Covid19_FE"]
 	path = CDCN_Covid19_FE
-	url = git@github.com:o2buzzle/CDCN_Covid19_FE.git
+	url = https://github.com/o2buzzle/CDCN_Covid19_FE.git
+
