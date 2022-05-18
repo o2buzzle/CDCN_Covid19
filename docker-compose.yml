@@ -1,0 +1,16 @@
+version: '2'
+services:
+  backend:
+    image: o2buzzle/oner-backend:latest
+  frontend:
+    image: o2buzzle/oner-frontend:latest
+  proxy:
+    image: o2buzzle/oner-proxy:latest
+    links:
+      - "backend:api_server"
+      - "frontend:frontend_host"
+    depends_on:
+      - backend
+      - frontend
+    ports:
+      - "80:80"
