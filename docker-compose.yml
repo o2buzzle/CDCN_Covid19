@@ -1,5 +1,9 @@
 version: '2'
 services:
+  #  watchtower:
+  #    image: containrrr/watchtower
+  #    volumes:
+  #      - /var/run/docker.sock:/var/run/docker.sock
   backend:
     image: o2buzzle/oner-backend:latest
   frontend:
@@ -14,3 +18,6 @@ services:
       - frontend
     ports:
       - "80:80"
+
+#    labels:
+#      com.centurylinklabs.watchtower.depends-on: "backend,frontend"
